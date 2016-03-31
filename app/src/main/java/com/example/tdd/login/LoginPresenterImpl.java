@@ -18,6 +18,7 @@ public class LoginPresenterImpl implements Login.Callback {
     }
 
     public boolean doLogin() {
+        boolean loginInitiated = false;
         String userName = view.getUserName();
         String password = view.getPassword();
         if (null == userName || userName.length()<=0) {
@@ -28,8 +29,10 @@ public class LoginPresenterImpl implements Login.Callback {
         }
         else {
             service.login(userName, password, this);
+
+            loginInitiated = true;
         }
-        return false;
+        return loginInitiated;
     }
 
 
@@ -43,25 +46,4 @@ public class LoginPresenterImpl implements Login.Callback {
         view.loginSuccess(strResId);
         loggedIn = true;
     }
-{
-/*
-
-
-
-        boolean loginInitiated = false;
-
-
-        loginInitiated = true;
-        return loginInitiated;
-    }
-
-    @Override
-    public void onLoginFailed(final int strResId) {
-    }
-
-    @Override
-    public void onLoginSuccess(final int strResId) {
-    }*/
-}
-
 }
