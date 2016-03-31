@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TestingSample1</string>
+    <string name="userNameEmptyMessage">User Name Cannot be Empty</string>
+    <string name="passwordEmptyMessage">Password Cannot be Empty</string>
+
+    <string name="hintUserName">Enter User Name</string>
+    <string name="hintEnterPassword">Enter Password</string>
+    <string name="loadingMessage">LOADING…</string>
+    <string name="noConnectivityMessage">No Internet</string>
+    <string name="loginFailedMessage">Login Failed</string>
+    <string name="loginSuccessMessage">Login Success</string>
+
+</resources>
